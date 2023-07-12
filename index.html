@@ -7,10 +7,10 @@
     <title>AirBnB - clone</title>
   </head>
   <body>
-    <header class="shadow-md">
+    <header class="sticky top-0 z-50 bg-white">
       <div
         id="upper"
-        class="border-b-2 flex justify-between py-4 px-10 items-center"
+        class="border-b-2 flex justify-between py-4 px-10 items-center flex-wrap"
       >
         <div id="logo">
           <img src="./media/icons/logo-word.svg" alt="logo" />
@@ -49,7 +49,7 @@
           </div>
         </div>
       </div>
-      <div id="lower" class="px-6 flex items-center gap-4">
+      <div id="lower" class="px-6 flex items-center justify-between">
         <div class="py-3 flex gap-6 relative">
           <div class="flex flex-col items-center p-2">
             <img
@@ -125,14 +125,126 @@
         </div>
       </div>
     </header>
-    
-   <div id="homes">
-    <section id="search-home">
 
+   <div id="homes" class="z-0">
+    <section id="search-home" class="w-full p-3">
+      <div class="border-[1px] flex py-4 px-4 w-[40%] items-center gap-3 mx-auto justify-between rounded-[20px]">
+        <div class="flex items-center gap-3">
+          <div class="font-semibold">Display total price</div>
+          <div class="h-[20px] w-[1px] bg-gray-300"></div>
+        </div>
+        <div class="w-[50%] outline-none text-gray-500">Includes all fees, before tax</div>
+      <div class="bg-[#B0B0B0] py-1 px-2 w-[60px] rounded-[40px] relative">
+        <div class="h-[30px] w-[30px] bg-white flex justify-center items-center rounded-[50%] -ml-1">
+          <img class="transform rotate-180 h-5 w-5 hidden"
+           src="./media/icons/up-icon.svg" alt="check">
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="p-4">
+      <div id="cards" class="p-4 flex flex-wrap items-center gap-5 justify-center">
+        <div class="card max-w-[300px] py-4 cursor-pointer relative">
+          <img class="h-72 rounded-xl object-cover"
+           src="./media/imgs/hous-with-pool.webp" alt="">
+           <img class="absolute top-6 right-5 h-6"
+            src="./media/icons/heart.svg" alt="heartful">
+          <div id="desc" class="mt-2 p-1">
+            <h1 class="font-semibold capitalize">Nairobi, kenya</h1>
+            <p class="text-gray-500">Hosted by susan</p>
+            <p class="text-gray-500">July 18 - 23</p>
+            <p><span class="font-semibold">$115</span> night</p>
+          </div>
+        </div>
+        <div class="card max-w-[300px] py-4 cursor-pointer relative">
+          <img class="h-72 rounded-xl object-cover"
+           src="./media/imgs/house1.jpeg" alt="">
+           <img class="absolute top-6 right-5 h-6"
+            src="./media/icons/heart.svg" alt="heartful">
+          <div id="desc" class="mt-2 p-1">
+            <h1 class="font-semibold capitalize">Nairobi, kenya</h1>
+            <p class="text-gray-500">Hosted by susan</p>
+            <p class="text-gray-500">July 18 - 23</p>
+            <p><span class="font-semibold">$115</span> night</p>
+          </div>
+        </div>
+        <div class="card max-w-[300px] py-4 cursor-pointer relative">
+          <img class="h-72 rounded-xl object-cover"
+           src="./media/imgs/house2.jpeg" alt="">
+           <img class="absolute top-6 right-5 h-6"
+            src="./media/icons/heart.svg" alt="heartful">
+          <div id="desc" class="mt-2 p-1">
+            <h1 class="font-semibold capitalize">Nairobi, kenya</h1>
+            <p class="text-gray-500">Hosted by susan</p>
+            <p class="text-gray-500">July 18 - 23</p>
+            <p><span class="font-semibold">$115</span> night</p>
+          </div>
+        </div>
+        <div class="card max-w-[300px] py-4 cursor-pointer relative">
+          <img class="h-72 rounded-xl object-cover"
+           src="./media/imgs/house3.jpeg" alt="">
+           <img class="absolute top-6 right-5 h-6"
+            src="./media/icons/heart.svg" alt="heartful">
+          <div id="desc" class="mt-2 p-1">
+            <h1 class="font-semibold capitalize">Nairobi, kenya</h1>
+            <p class="text-gray-500">Hosted by susan</p>
+            <p class="text-gray-500">July 18 - 23</p>
+            <p><span class="font-semibold">$115</span> night</p>
+          </div>
+        </div>
+        <div class="card max-w-[300px] py-4 cursor-pointer relative">
+          <img class="h-72 rounded-xl object-cover"
+           src="./media/imgs/hous-with-pool.webp" alt="">
+           <img class="absolute top-6 right-5 h-6"
+            src="./media/icons/heart.svg" alt="heartful">
+          <div id="desc" class="mt-2 p-1">
+            <h1 class="font-semibold capitalize">Nairobi, kenya</h1>
+            <p class="text-gray-500">Hosted by susan</p>
+            <p class="text-gray-500">July 18 - 23</p>
+            <p><span class="font-semibold">$115</span> night</p>
+          </div>
+        </div>
+        <div class="card max-w-[300px] py-4 cursor-pointer relative">
+          <img class="h-72 rounded-xl object-cover"
+           src="./media/imgs/house3.jpeg" alt="">
+           <img class="absolute top-6 right-5 h-6"
+            src="./media/icons/heart.svg" alt="heartful">
+          <div id="desc" class="mt-2 p-1">
+            <h1 class="font-semibold capitalize">Nairobi, kenya</h1>
+            <p class="text-gray-500">Hosted by susan</p>
+            <p class="text-gray-500">July 18 - 23</p>
+            <p><span class="font-semibold">$115</span> night</p>
+          </div>
+        </div>
+        <div class="card max-w-[300px] py-4 cursor-pointer relative">
+          <img class="h-72 rounded-xl object-cover"
+           src="./media/imgs/house1.jpeg" alt="">
+           <img class="absolute top-6 right-5 h-6"
+            src="./media/icons/heart.svg" alt="heartful">
+          <div id="desc" class="mt-2 p-1">
+            <h1 class="font-semibold capitalize">Nairobi, kenya</h1>
+            <p class="text-gray-500">Hosted by susan</p>
+            <p class="text-gray-500">July 18 - 23</p>
+            <p><span class="font-semibold">$115</span> night</p>
+          </div>
+        </div>
+        <div class="card max-w-[300px] py-4 cursor-pointer relative">
+          <img class="h-72 rounded-xl object-cover"
+           src="./media/imgs/house2.jpeg" alt="">
+           <img class="absolute top-6 right-5 h-6"
+            src="./media/icons/heart.svg" alt="heartful">
+          <div id="desc" class="mt-2 p-1">
+            <h1 class="font-semibold capitalize">Nairobi, kenya</h1>
+            <p class="text-gray-500">Hosted by susan</p>
+            <p class="text-gray-500">July 18 - 23</p>
+            <p><span class="font-semibold">$115</span> night</p>
+          </div>
+        </div>
+      </div>
     </section>
    </div>
 
-    <footer class="flex justify-between items-center p-2 fixed bottom-0 border-t-[1px] border-gray-300 w-full">
+    <footer class="bg-white z-30 flex justify-between items-center p-2 fixed bottom-0 border-t-[1px] border-gray-300 w-full">
       <div id="fl" class="flex items-center gap-3 text-[16px]">
         <div>&copy;2023 Airbnb,Inc</div>
         <div>Terms</div>
